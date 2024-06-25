@@ -7,6 +7,7 @@ Ahi quanto a dir qual era è cosa dura
 esta selva selvaggia e aspra e forte
 che nel pensier rinova la paura!';
 $banword = $_GET['ban'];
+$length = strlen($text);
 
 $string = str_replace($banword, '***', $text);
 ?>
@@ -23,6 +24,9 @@ $string = str_replace($banword, '***', $text);
         <div>
             <p>
                 <?php echo $string; ?>
+            </p>
+            <p>
+                lenght: <?php echo $length ?>
             </p>
         </div>
         <div>
