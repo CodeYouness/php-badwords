@@ -5,8 +5,10 @@ ché la diritta via era smarrita.
 
 Ahi quanto a dir qual era è cosa dura
 esta selva selvaggia e aspra e forte
-che nel pensier rinova la paura!'
+che nel pensier rinova la paura!';
+$banword = $_GET['ban'];
 
+$string = str_replace($banword, '***', $text);
 ?>
 
 <!DOCTYPE html>
@@ -18,9 +20,17 @@ che nel pensier rinova la paura!'
 </head>
 <body>
     <main>
-        <p>
-            <?php echo $text; ?>
-        </p>
+        <div>
+            <p>
+                <?php echo $string; ?>
+            </p>
+        </div>
+        <div>
+            <form action="./index.php" method="get">
+                <input type="text" name="ban" id="ban">
+                <button type="submit">Send</button>
+            </form>
+        </div>
     </main>
 </body>
 </html>
