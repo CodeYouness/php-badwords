@@ -1,4 +1,4 @@
-<?php 
+<?php
 $text = 'Nel mezzo del cammin di nostra vita
 mi ritrovai per una selva oscura,
 ché la diritta via era smarrita.
@@ -14,11 +14,13 @@ $string = str_replace($banword, '***', $text);
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ban Word</title>
 </head>
+
 <body>
     <main>
         <div>
@@ -26,7 +28,7 @@ $string = str_replace($banword, '***', $text);
                 <?php echo $string; ?>
             </p>
             <p>
-                lenght: <?php echo $length ?>
+                lenght: <?php echo $string; ?>
             </p>
         </div>
         <div>
@@ -37,4 +39,5 @@ $string = str_replace($banword, '***', $text);
         </div>
     </main>
 </body>
+
 </html>
